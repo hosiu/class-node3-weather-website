@@ -63,7 +63,8 @@ weatherForm.addEventListener('submit', (e) => {
         messageTwo.textContent = ''
     } else {
         const host = 'localhost:3000'
-        const url = 'http://' + host + '/weather?address=' + location
+        // const url = 'http://' + host + '/weather?address=' + location
+        const url = '/weather?address=' + location
         fetch(url).then((respond) => {
             respond.json().then((data) => {
                 if (data.error) {
