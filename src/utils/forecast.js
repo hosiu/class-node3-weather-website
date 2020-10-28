@@ -34,7 +34,8 @@ const forecast = (x, y, callback) => {
                 temperature : body.current.temperature,
                 feelsLike : body.current.feelslike,
                 precip : body.current.precip,
-                desc : body.current.weather_descriptions[0]
+                desc : body.current.weather_descriptions[0],
+                humidity : body.current.humidity
             })
         }
     })

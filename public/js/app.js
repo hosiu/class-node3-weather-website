@@ -75,8 +75,9 @@ weatherForm.addEventListener('submit', (e) => {
                     console.log(data.temperature.temperature)
                     console.log(data.temperature.feelsLike)
                     console.log(data.temperature.desc)
+                    console.log(data.temperature.humidity)
                     messageOne.textContent = data.location
-                    messageTwo.textContent = 'Current temp. is ' + data.temperature.temperature + 'C, but feel like ' + data.temperature.feelsLike + 'C. Generally, it is ' + data.temperature.desc
+                    messageTwo.textContent = 'Current temp. is ' + data.temperature.temperature + 'C, but feel like ' + data.temperature.feelsLike + 'C and the humidity is ' + data.temperature.humidity + '. Generally, it is ' + data.temperature.desc
                 }
             })
         })
